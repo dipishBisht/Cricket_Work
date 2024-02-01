@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .discover-inner {
+            display: flex;
+            max-width: 1250px;
+            justify-content: space-between;
+            margin: 20px auto;
+            padding: 0px 10px;
+        }
+
+        .discover-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #firstH1 {
+            font-size: 40px;
+            max-width: 500px;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        #secondH1{
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .discover-left h1 span {
+            color: #0466c8;
+        }
+
+        .discover-left h1 img {
+            height: 50px;
+            width: 50px;
+
+        }
+
+        .discover-left p {
+            max-width: 550px;
+            margin-block: 20px;
+            line-height: 25px;
+            line-height: 22px;
+        }
+
+        .discover-left>img{
+            max-width: 350px;
+            border-radius: 7px;
+        }
+
+        .discover-right {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-right: 10px;
+        }
+
+        .discover-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 10px 10px;
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 7px;
+        }
+
+        .discover-boxes img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .discover-right p,
+        .discover-right section {
+            max-width: 500px;
+            line-height: 22px;
+        }
+
+        @media (max-width:920px) {
+            .discover-inner {
+                flex-direction: column;
+                gap: 50px;
+            }
+
+            .discover-left h1 {
+                font-size: 38px;
+            }
+
+            .discover-left p {
+                max-width: none;
+                margin-block: 20px;
+                line-height: 21px;
+            }
+
+            .discover-right p,
+            .discover-right section {
+                max-width: 500px;
+                font-size: 15px;
+                line-height: 21px;
+            }
+        }
+
+        @media (max-width:630px) {
+            .discover-left h1 {
+                font-size: 36px;
+            }
+
+            .discover-left p {
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            .discover-right {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .discover-boxes img {
+                height: 40px;
+                width: 40px;
+            }
+
+            .discover-right p,
+            .discover-right section {
+                max-width: none;
+                line-height: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="discover-main">
+        <div class="discover-inner">
+            <div class="discover-left">
+                <h1 id="firstH1"><span>Discover</span> our <span>Cricket</span></h1>
+                <h1 id="secondH1">Academy<img
+                        src="https://cdn-icons-png.freepik.com/256/10/10552.png?ga=GA1.1.1064781564.1691778604&semt=ais"
+                        alt=""></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil enim voluptates ut voluptatem
+                    harum a quaerat ipsam nesciunt quos, saepe eum eaque ratione sed, totam at rem itaque sint!</p>
+                    <img src="https://img.freepik.com/free-photo/cricket-bat-ball-foreground-pitch_91128-4644.jpg?size=626&ext=jpg&ga=GA1.1.1064781564.1691778604&semt=sph" alt="">
+            </div>
+
+            <div class="discover-right">
+                <div class="discover-boxes">
+                    <img src="ball.png" alt="">
+                    <h2>Who is it for?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ipsa earum iusto, tempore iure
+                        illo. Maxime officiis eveniet molestias, nemo rerum laudantium obcaecati porro natus </p>
+                    <section>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime beatae harum, repellendus
+                        aliquam provident qit soluta expedita accusantium totam!</section>
+                </div>
+
+                <div class="discover-boxes">
+                    <img src="https://cdn-icons-png.freepik.com/256/7795/7795898.png?ga=GA1.1.1064781564.1691778604&semt=ais"
+                        alt="">
+                    <h2>Level: Medium - High</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ipsa earum iusto, tempore iure
+                        illo. Maxime officiis eveniet molestias, nemo rerum laudantium obcaecati porro natus </p>
+                    <section>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime beatae harum, repellendus
+                        aliquam provident qit soluta expedita accusantium totam!</section>
+                </div>
+
+                <div class="discover-boxes">
+                    <img src="https://cdn-icons-png.freepik.com/256/1584/1584808.png?ga=GA1.1.1064781564.1691778604&semt=ais"
+                        alt="">
+                    <h2>Duration</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ipsa earum iusto, tempore iure
+                        illo. Maxime officiis eveniet molestias, nemo rerum laudantium obcaecati porro natus </p>
+                    <section>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime beatae harum, repellendus
+                        aliquam provident qit soluta expedita accusantium totam!</section>
+                </div>
+
+                <div class="discover-boxes">
+                    <img src="https://cdn-icons-png.freepik.com/256/535/535239.png?ga=GA1.1.1064781564.1691778604&semt=ais"
+                        alt="">
+                    <h2>Location</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ipsa earum iusto, tempore iure
+                        illo. Maxime officiis eveniet molestias, nemo rerum laudantium obcaecati porro natus </p>
+                    <section>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime beatae harum, repellendus
+                        aliquam provident qit soluta expedita accusantium totam!</section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
